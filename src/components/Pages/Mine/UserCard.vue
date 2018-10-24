@@ -120,6 +120,8 @@ export default {
   flex: 1;
   margin: 0;
   padding: 5px 0;
+  width: 25%;
+  min-width: 25%;
   height: 100%;
 }
 .item-content {
@@ -128,12 +130,10 @@ export default {
   text-align: center;
   width: 100%;
   height: 100%;
+  color: #666;
   border-right: 1px solid #eee;
 }
 .item:last-child .item-content {
   border-right: unset;
-}
-.item-content span:first-child {
-  text-decoration: underline;
 }
 </style>

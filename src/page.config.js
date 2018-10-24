@@ -32,6 +32,11 @@ function _setTabBar() {
                 selectIcon: "",
                 text: "我的",
             },
+            {
+                icon: "home",
+                selectIcon: "",
+                text: "主页",
+            },
         ]
     }
     setTimeout(() => {
