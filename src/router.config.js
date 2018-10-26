@@ -44,12 +44,7 @@ const routersConfig = [
                 path: '/mine',
                 name: 'Mine',
                 component: resolve => require(['@/components/Pages/Mine/Mine'], resolve),
-            },
-            {
-                path: '/SubMine',
-                name: 'Index1',
-                component: resolve => require(['@/components/Pages/SubMine/SubMine'], resolve),
-            },
+            }
 
         ],
     },

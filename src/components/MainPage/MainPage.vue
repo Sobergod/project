@@ -37,6 +37,9 @@ export default {
       }
     }
   },
+  data() {
+    return {};
+  },
   created() {
     this._setMainWrapHeight();
     this._onResize();

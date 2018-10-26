@@ -16,7 +16,8 @@ export default {
   data() {
     return {
       config: config,
-      test: []
+      test: [],
+      items: ["Foo", "Bar", "Fizz", "Buzz"]
     };
   },
   created() {
@@ -33,4 +34,7 @@ export default {
 </script>
 
 <style scoped>
+.select-wrap {
+  width: 100%;
+}
 </style>
