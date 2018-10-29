@@ -1,14 +1,14 @@
 <template>
   <main-page :title="config.title" :navOption="config.navOption" :setHeaderHeight="config.setHeaderHeight">
-    <van-tabs v-model="active" sticky :offset-top="config.setHeaderHeight">
-      <van-tab v-for="index in 4" :title="'选项 ' + index" :key="index">
-        <van-pull-refresh v-model="isLoading" @refresh="onRefresh">
-          <van-list v-model="loading" :finished="finished" @load="onLoad">
-            <detail-card v-for="(item,index) in test" :key="index"></detail-card>
-          </van-list>
-        </van-pull-refresh>
-      </van-tab>
-    </van-tabs>
+    <!-- <van-tabs v-model="active" sticky :offset-top="config.setHeaderHeight"> -->
+    <!-- <van-tab v-for="index in 4" :title="'选项 ' + index" :key="index"> -->
+    <van-pull-refresh v-model="isLoading" @refresh="onRefresh">
+      <van-list v-model="loading" :finished="finished" @load="onLoad">
+        <detail-card v-for="(item,index) in test" :key="index"></detail-card>
+      </van-list>
+    </van-pull-refresh>
+    <!-- </van-tab> -->
+    <!-- </van-tabs> -->
   </main-page>
 </template>
 
