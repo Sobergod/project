@@ -2,7 +2,7 @@
   <div class="wrap" ref="wrap">
     <header-item :title="title" :backPath="backPath" :navOption="navOption" ref="header"></header-item>
     <div class="main-box" ref="box">
-      <slot></slot>
+      <slot :offsetTop="offsetTop"></slot>
     </div>
   </div>
 </template>
@@ -32,7 +32,8 @@ export default {
         return {
           hasBack: true,
           hasSearch: true,
-          hasOption: true
+          hasOption: true,
+          offsetTop: 0
         };
       }
     }

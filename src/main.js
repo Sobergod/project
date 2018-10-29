@@ -7,11 +7,14 @@ import App from './App'
 import router from './router'
 import Utils from './utils/utils'
 import Vuetify from 'vuetify'
+import Vant from 'vant'
 import 'vuetify/dist/vuetify.min.css'
+import 'vant/lib/vant-css/index.css'
 // import '@fortawesome/fontawesome-free/css/all.css'
 Vue.use(Vuetify, {
   iconfont: 'mdi'
 })
+Vue.use(Vant)
 const utils = new Utils()
 Vue.prototype.$utils = utils
 Vue.config.productionTip = false
