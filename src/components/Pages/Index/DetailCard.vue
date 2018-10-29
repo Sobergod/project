@@ -47,12 +47,12 @@ export default {
 .detail-card {
   max-width: 400px;
   margin: 5px auto;
-  background-color: #f5f5f5;
+  background-color: #fff;
   box-shadow: 0px 1px 5px #c5c5c5;
 }
 .cover-img {
   width: 100%;
-  height: 120px;
+  height: 100px;
   padding: 10px;
   background-position: center;
   background-size: cover;
@@ -67,7 +67,7 @@ export default {
   letter-spacing: 3px;
 }
 .cover-content {
-  padding: 10px;
+  padding: 5px 10px;
 }
 
 .cover-time {
