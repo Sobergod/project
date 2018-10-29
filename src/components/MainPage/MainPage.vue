@@ -1,8 +1,8 @@
 <template>
   <div class="wrap" ref="wrap">
-    <header-item :title="title" :backPath="backPath" :navOption="navOption" ref="header"></header-item>
+    <header-item :setHeaderHeight="setHeaderHeight" :title="title" :backPath="backPath" :navOption="navOption" ref="header"></header-item>
     <div class="main-box" ref="box">
-      <slot :offsetTop="offsetTop"></slot>
+      <slot></slot>
     </div>
   </div>
 </template>
@@ -25,6 +25,10 @@ export default {
     footerHeight: {
       type: Number,
       default: 0
+    },
+    setHeaderHeight: {
+      type: Number,
+      default: 48
     },
     navOption: {
       type: Object,

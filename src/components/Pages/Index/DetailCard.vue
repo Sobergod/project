@@ -47,8 +47,8 @@ export default {
 .detail-card {
   max-width: 400px;
   margin: 5px auto;
-  background-color: #ffffff;
-  box-shadow: 0px 1px 5px #888;
+  background-color: #f5f5f5;
+  box-shadow: 0px 1px 5px #c5c5c5;
 }
 .cover-img {
   width: 100%;

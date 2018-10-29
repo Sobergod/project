@@ -6,4 +6,6 @@ export const config = {
         hasSearch: false,
         hasOption: true
     },
+    // 不设置就是默认48
+    setHeaderHeight: 48,
 }

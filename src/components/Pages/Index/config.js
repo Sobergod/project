@@ -7,4 +7,5 @@ export const config = {
         hasSearch: true,
         hasOption: true
     },
+    setHeaderHeight: 48,
 }

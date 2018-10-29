@@ -1,5 +1,5 @@
 <template>
-  <main-page :title="config.title" :backPath="config.backPath" :navOption="config.navOption">
+  <main-page :title="config.title" :backPath="config.backPath" :navOption="config.navOption" :setHeaderHeight="config.setHeaderHeight">
     <div class="head-box">
       <user-card :user="user"></user-card>
     </div>

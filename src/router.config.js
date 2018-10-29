@@ -29,7 +29,12 @@ class Routers {
         return routersResult;
     }
 }
-// 全局router配置
+/**
+ *  
+ * 全局router配置
+ * 如果不想要footer 就把页面全配置到第二个路由里面,然后加上 redirect: '/a',
+ * 
+ * */
 const routersConfig = [
     {
         path: '/',
@@ -39,6 +44,7 @@ const routersConfig = [
                 path: '/',
                 name: 'Index',
                 component: resolve => require(['@/components/Pages/Index/Index'], resolve),
+                // redirect: '/a',
             },
             {
                 path: '/mine',

@@ -33,6 +33,10 @@ export default {
       type: String,
       default: ""
     },
+    setHeaderHeight: {
+      type: Number,
+      default: 48
+    },
     navOption: {
       type: Object,
       default() {
@@ -55,6 +59,7 @@ export default {
   methods: {
     // 设置头部样式
     _setHeaderStyle() {
+      Header.style.height = this.setHeaderHeight + "px";
       this.headerStyle = Header.style;
       this.hasOption = Header.hasOption;
     },
@@ -77,7 +82,6 @@ export default {
   box-sizing: border-box;
   position: relative;
   padding: 0 16px;
-  height: 48px;
   max-height: 48px;
   overflow: hidden;
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
